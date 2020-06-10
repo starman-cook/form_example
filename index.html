@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>attractor_school</title>
+</head>
+
+<body>
+    <!-- Create user page -->
+    <div class="container">
+        <!-- head -->
+        <h1 class="main-title">Create User</h1>
+        <div class="blue-head">
+            <p class="titles white">User info</p>
+        </div>
+        <!-- form user info -->
+        <div class="grey-bg-form">
+            <form>
+                <!-- row personal info -->
+                <h2 class="titles black">Personal info</h2>
+                <div class="row">
+                    <div>
+                        <h3 class="titles-small required">Title</h3>
+                        <!-- radio input title -->
+                        <div class="btn-title">
+                            <label class="checkbox-label">
+                                <input type="radio" class="checkbox hidden" name="title" required>
+                                <span class="checkbox-text left">
+                                    Mr
+                                </span>
+                            </label>
+                            <label class="checkbox-label top-layer">
+                                <input type="radio" class="checkbox hidden" name="title" required>
+                                <span class="checkbox-text middle">
+                                    Mrs
+                                </span>
+                            </label>
+                            <label class="checkbox-label right">
+                                <input type="radio" class="checkbox hidden" name="title" required>
+                                <span class="checkbox-text right">
+                                    Ms
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Username first and last-->
+                    <div class="form-pieces">
+                        <h3 class="titles-small required">First name</h3>
+                        <input type="text" class="input long" name="first_name" placeholder="Enter first name" required>
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small required">Last name</h3>
+                        <input type="text" class="input long" name="last_name" placeholder="Enter last name" required>
+                    </div>
+                </div>
+                <!-- row location -->
+                <h2 class="titles black">Location</h2>
+                <div class="row">
+                    <div class="form-pieces  no-left">
+                        <h3 class="titles-small required">Street</h3>
+                        <input type="text" class="input long" name="street" placeholder="Enter street" required>
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small required">Building</h3>
+                        <input type="text" class="input small" name="building" placeholder="#" required>
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small required">Apartment</h3>
+                        <input type="text" class="input small" name="apartment" placeholder="#" required>
+                    </div>
+                </div>
+                <!-- row contacts -->
+                <h2 class="titles black">Contacts</h2>
+                <div class="row">
+                    <div class="form-pieces  no-left">
+                        <h3 class="titles-small required">Mobile</h3>
+                        <input type="tel" class="input medium" name="mobile" placeholder="+XX XX XX XX XXX" required>
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small required">Email</h3>
+                        <input type="email" class="input medium" name="email" placeholder="Enter email address"
+                            required>
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small">Tel</h3>
+                        <input type="tel" class="input medium" name="telephone" placeholder="XXXX XX XX XX">
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small">Fax</h3>
+                        <input type="tel" class="input medium" name="fax" placeholder="XXXX XX XX XX">
+                    </div>
+                </div>
+                <!-- row  credentials setting-->
+                <h2 class="titles black">Credentials setting</h2>
+                <div class="row">
+                    <div class="form-pieces  no-left">
+                        <h3 class="titles-small required">Enter password</h3>
+                        <input type="password" class="input medium" name="password" placeholder="New password" required>
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small required">Confirm password</h3>
+                        <input type="password" class="input medium" name="confirm_password"
+                            placeholder="Confirm new password" required>
+                    </div>
+                    <div class="form-pieces">
+                        <h3 class="titles-small required">Add login</h3>
+                        <input type="text" class="input medium" name="login" placeholder="Create login" required>
+                    </div>
+                </div>
+                <!-- buttons submit and reset -->
+                <div class="btns-form">
+                    <button type="submit" class="btn submit titles white">Create</button>
+                    <button type="reset" class="btn reset titles blue">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
